@@ -112,7 +112,7 @@ exports.paymentVerification = async (req, res) => {
         console.log("Payment verified successfully");
 
         // Redirect to the payment success page
-        res.redirect(`http://localhost:3000/paymentsuccess?reference=${razorpay_payment_id}`);
+        res.redirect(`http://16.170.30.0:3000/paymentsuccess?reference=${razorpay_payment_id}`);
     } catch (error) {
         // Log the error and send an internal server error response
         console.error("Error during payment verification:", error);
